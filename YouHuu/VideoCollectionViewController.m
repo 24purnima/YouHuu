@@ -6,9 +6,9 @@
 //  Copyright © 2016 WhizKidz. All rights reserved.
 //
 
-#define youtubeImageUrl "http://img.youtube.com/vi/VIDEO_ID/0.jpg"
 
 #import "VideoCollectionViewController.h"
+#import "PlayVideoViewController.h"
 #import <AVFoundation/AVPlayerLayer.h>
 #import <AVFoundation/AVFoundation.h>
 #import <AVKit/AVKit.h>
@@ -16,6 +16,7 @@
 #import "XCDYouTubeClient.h"
 #import "XCDYouTubeVideoPlayerViewController.h"
 #import "XCDYouTubeKit.h"
+#import "Constant.h"
 
 
 @interface VideoCollectionViewController ()
@@ -126,8 +127,8 @@
         NSDictionary *dict = [self.videoMutableArray objectAtIndex:j];
         NSString *videoUrl = [dict objectForKey:@"url"];
         
-        NSString *imageStr = @youtubeImageUrl;
-        imageStr = [imageStr stringByReplacingOccurrencesOfString:@"VIDEO_ID" withString:[self extractYoutubeIdFromLink:videoUrl]];
+        NSString *imageStr = YouTubeImageUrl;
+        imageStr = [imageStr stringByReplacingOccurrencesOfString:@"VIDEO_ID" withString:[Constant extractYoutubeIdFromLink:videoUrl]];
         NSURL *imgUrl = [NSURL URLWithString:imageStr];
         
 //        NSLog(@"video id: %@",imageStr);
@@ -160,46 +161,34 @@
 }
 
 
-- (NSString *)extractYoutubeIdFromLink:(NSString *)link {
-    
-    NSString *regexString = @"((?<=(v|V)/)|(?<=be/)|(?<=(\\?|\\&)v=)|(?<=embed/))([\\w-]++)";
-    NSRegularExpression *regExp = [NSRegularExpression regularExpressionWithPattern:regexString
-                                                                            options:NSRegularExpressionCaseInsensitive
-                                                                              error:nil];
-    
-    NSArray *array = [regExp matchesInString:link options:0 range:NSMakeRange(0,link.length)];
-    if (array.count > 0) {
-        NSTextCheckingResult *result = array.firstObject;
-        return [link substringWithRange:result.range];
-    }
-    return nil;
-}
-
-
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 -(BOOL)shouldAutorotate {
     return YES;
 }
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations {
-    return UIInterfaceOrientationMaskLandscapeLeft;
+    return UIInterfaceOrientationMaskLandscapeRight;
 }
 
 
-/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    
+    NSLog(@"youtube id: %@",self.youtubeIdentifier);
+    if ([segue.identifier isEqualToString:@"playVideo"]) {
+        
+        PlayVideoViewController *destView = [segue destinationViewController];
+        destView.videoIdentifier = self.youtubeIdentifier;
+    }
 }
-*/
+
 
 - (IBAction)playButton1Click:(id)sender {
     
@@ -228,32 +217,40 @@
 - (IBAction)historyButtonClick:(id)sender {
 }
 
+#pragma get video identifier with index value
 -(void)getVideosDictFromIndexValue:(int)indexValue
 {
     
-    NSData *watchedData = [[NSUserDefaults standardUserDefaults] objectForKey:@"WatchedJSON"];
-    
-    
-    NSMutableArray *watchedArray = [NSMutableArray arrayWithArray:[NSKeyedUnarchiver unarchiveObjectWithData:watchedData]];
-    
+//    NSData *watchedData = [[NSUserDefaults standardUserDefaults] objectForKey:@"WatchedJSON"];
+//    
+//    
+//    NSMutableArray *watchedArray = [NSMutableArray arrayWithArray:[NSKeyedUnarchiver unarchiveObjectWithData:watchedData]];
+//    
     NSDictionary *dict = [self.videoMutableArray objectAtIndex:indexValue];
-    
-    [watchedArray addObject:[self.videoMutableArray objectAtIndex:indexValue]];
-    
-    
-    NSData *data1 = [NSKeyedArchiver archivedDataWithRootObject:watchedArray];
-    [self.storeUserInfo setObject:data1 forKey:@"WatchedJSON"];
-    [self.storeUserInfo synchronize];
+//
+//    [watchedArray addObject:[self.videoMutableArray objectAtIndex:indexValue]];
+//    
+//    
+//    NSData *data1 = [NSKeyedArchiver archivedDataWithRootObject:watchedArray];
+//    [self.storeUserInfo setObject:data1 forKey:@"WatchedJSON"];
+//    [self.storeUserInfo synchronize];
     
     NSString *videoUrl = [dict objectForKey:@"url"];
-    NSString *videoIdentifier = [self extractYoutubeIdFromLink:videoUrl];
-    [self playYoutTubeVideoWithIdentifier:videoIdentifier];
+    self.youtubeIdentifier = [Constant extractYoutubeIdFromLink:videoUrl];
+    
+    [self performSegueWithIdentifier:@"playVideo" sender:self];
+//    [self playYoutTubeVideoWithIdentifier:videoIdentifier];
 }
 
+#pragma play video with identifier method-
 -(void)playYoutTubeVideoWithIdentifier:(NSString*)videoIdentifier
 {
     AVPlayerViewController *playerViewController = [[AVPlayerViewController alloc] init];
-    [self presentViewController:playerViewController animated:true completion:nil];
+//    [self presentViewController:playerViewController animated:true completion:nil];
+    
+    
+//    [self.view addSubview:playerViewController.view];
+    
     
     __weak AVPlayerViewController *weakPlayerViewController = playerViewController;
     
@@ -271,5 +268,10 @@
         
     }];
 }
+
+-(void)addObsereverOfPlayer:(NSNotification *)noti{
+    
+}
+
 
 @end

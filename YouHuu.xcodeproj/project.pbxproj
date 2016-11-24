@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BD02B68B89B9DE128070A18 /* libPods-YouHuuUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BBCD7198916B3D08B19B469 /* libPods-YouHuuUITests.a */; };
+		7501A74C1DE3E3840018A866 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7501A74A1DE3E3840018A866 /* Fabric.framework */; };
+		7501A74D1DE3E3840018A866 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7501A74B1DE3E3840018A866 /* Crashlytics.framework */; };
+		7501A7511DE40FE20018A866 /* PlayVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7501A7501DE40FE20018A866 /* PlayVideoViewController.m */; };
+		7501A7561DE411630018A866 /* Constant.m in Sources */ = {isa = PBXBuildFile; fileRef = 7501A7551DE411630018A866 /* Constant.m */; };
 		75E81F411DE214EC001AC532 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E81F401DE214EC001AC532 /* main.m */; };
 		75E81F441DE214EC001AC532 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E81F431DE214EC001AC532 /* AppDelegate.m */; };
 		75E81F471DE214EC001AC532 /* ParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E81F461DE214EC001AC532 /* ParentViewController.m */; };
@@ -61,6 +66,8 @@
 		75E820591DE2FEB9001AC532 /* history@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75E820571DE2FEB9001AC532 /* history@2x.png */; };
 		75E8205A1DE2FEB9001AC532 /* history@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75E820581DE2FEB9001AC532 /* history@3x.png */; };
 		75E8205D1DE30070001AC532 /* WatchedVideoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E8205C1DE30070001AC532 /* WatchedVideoTableViewCell.m */; };
+		8E5A8ECF8C8AB7792B65413D /* libPods-YouHuuTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E08136B7045E73D4B522F02 /* libPods-YouHuuTests.a */; };
+		9300AD9B46BF7F1EC7B3A787 /* libPods-YouHuu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA126D7DF4C186035C44FAF /* libPods-YouHuu.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +88,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0777741DC57FC0C4CEC20E34 /* Pods-YouHuuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouHuuTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YouHuuTests/Pods-YouHuuTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0A3B1CDB2EFF1E576FDE8772 /* Pods-YouHuuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouHuuTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YouHuuTests/Pods-YouHuuTests.release.xcconfig"; sourceTree = "<group>"; };
+		0E010839FED4223591D51BB7 /* Pods-YouHuuUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouHuuUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YouHuuUITests/Pods-YouHuuUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2BA126D7DF4C186035C44FAF /* libPods-YouHuu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YouHuu.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E08136B7045E73D4B522F02 /* libPods-YouHuuTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YouHuuTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BBCD7198916B3D08B19B469 /* libPods-YouHuuUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YouHuuUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		71B68B10520CB3A91D6CFD01 /* Pods-YouHuu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouHuu.release.xcconfig"; path = "Pods/Target Support Files/Pods-YouHuu/Pods-YouHuu.release.xcconfig"; sourceTree = "<group>"; };
+		7501A74A1DE3E3840018A866 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		7501A74B1DE3E3840018A866 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		7501A74F1DE40FE20018A866 /* PlayVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayVideoViewController.h; sourceTree = "<group>"; };
+		7501A7501DE40FE20018A866 /* PlayVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayVideoViewController.m; sourceTree = "<group>"; };
+		7501A7541DE411630018A866 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		7501A7551DE411630018A866 /* Constant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constant.m; sourceTree = "<group>"; };
+		75213BDECD8507D883CC52B9 /* Pods-YouHuuUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouHuuUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YouHuuUITests/Pods-YouHuuUITests.release.xcconfig"; sourceTree = "<group>"; };
 		75E81F3C1DE214EC001AC532 /* YouHuu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouHuu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75E81F401DE214EC001AC532 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		75E81F421DE214EC001AC532 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -175,6 +196,7 @@
 		75E820581DE2FEB9001AC532 /* history@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "history@3x.png"; sourceTree = "<group>"; };
 		75E8205B1DE30070001AC532 /* WatchedVideoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WatchedVideoTableViewCell.h; sourceTree = "<group>"; };
 		75E8205C1DE30070001AC532 /* WatchedVideoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WatchedVideoTableViewCell.m; sourceTree = "<group>"; };
+		E216EABC4080FFB72B1D2EF8 /* Pods-YouHuu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouHuu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YouHuu/Pods-YouHuu.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +206,9 @@
 			files = (
 				75E820301DE2E2E1001AC532 /* AVKit.framework in Frameworks */,
 				75E8202E1DE2E08C001AC532 /* AVFoundation.framework in Frameworks */,
+				7501A74D1DE3E3840018A866 /* Crashlytics.framework in Frameworks */,
+				7501A74C1DE3E3840018A866 /* Fabric.framework in Frameworks */,
+				9300AD9B46BF7F1EC7B3A787 /* libPods-YouHuu.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,6 +216,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E5A8ECF8C8AB7792B65413D /* libPods-YouHuuTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,21 +224,76 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BD02B68B89B9DE128070A18 /* libPods-YouHuuUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4BAF523261ECF2753CCB269F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E216EABC4080FFB72B1D2EF8 /* Pods-YouHuu.debug.xcconfig */,
+				71B68B10520CB3A91D6CFD01 /* Pods-YouHuu.release.xcconfig */,
+				0777741DC57FC0C4CEC20E34 /* Pods-YouHuuTests.debug.xcconfig */,
+				0A3B1CDB2EFF1E576FDE8772 /* Pods-YouHuuTests.release.xcconfig */,
+				0E010839FED4223591D51BB7 /* Pods-YouHuuUITests.debug.xcconfig */,
+				75213BDECD8507D883CC52B9 /* Pods-YouHuuUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4CECEE0764AE10C63EC86ED1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BA126D7DF4C186035C44FAF /* libPods-YouHuu.a */,
+				4E08136B7045E73D4B522F02 /* libPods-YouHuuTests.a */,
+				5BBCD7198916B3D08B19B469 /* libPods-YouHuuUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7501A74E1DE40FC70018A866 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				75E81F421DE214EC001AC532 /* AppDelegate.h */,
+				75E81F431DE214EC001AC532 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		7501A7531DE410F60018A866 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				75E8205B1DE30070001AC532 /* WatchedVideoTableViewCell.h */,
+				75E8205C1DE30070001AC532 /* WatchedVideoTableViewCell.m */,
+			);
+			name = TableViewCells;
+			sourceTree = "<group>";
+		};
+		7501A7571DE412020018A866 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				7501A7541DE411630018A866 /* Constant.h */,
+				7501A7551DE411630018A866 /* Constant.m */,
+			);
+			name = Constant;
+			sourceTree = "<group>";
+		};
 		75E81F331DE214EC001AC532 = {
 			isa = PBXGroup;
 			children = (
+				7501A74A1DE3E3840018A866 /* Fabric.framework */,
+				7501A74B1DE3E3840018A866 /* Crashlytics.framework */,
 				75E8202F1DE2E2E1001AC532 /* AVKit.framework */,
 				75E8202D1DE2E08C001AC532 /* AVFoundation.framework */,
 				75E81F3E1DE214EC001AC532 /* YouHuu */,
 				75E81F5B1DE214EC001AC532 /* YouHuuTests */,
 				75E81F661DE214ED001AC532 /* YouHuuUITests */,
 				75E81F3D1DE214EC001AC532 /* Products */,
+				4BAF523261ECF2753CCB269F /* Pods */,
+				4CECEE0764AE10C63EC86ED1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -231,8 +312,9 @@
 			children = (
 				75E81F8D1DE2D637001AC532 /* Libraries */,
 				75E81F781DE2213A001AC532 /* images */,
-				75E81F421DE214EC001AC532 /* AppDelegate.h */,
-				75E81F431DE214EC001AC532 /* AppDelegate.m */,
+				7501A74E1DE40FC70018A866 /* AppDelegate */,
+				7501A7531DE410F60018A866 /* TableViewCells */,
+				7501A7571DE412020018A866 /* Constant */,
 				75E81F451DE214EC001AC532 /* ParentViewController.h */,
 				75E81F461DE214EC001AC532 /* ParentViewController.m */,
 				75E81F481DE214EC001AC532 /* Main.storyboard */,
@@ -245,8 +327,8 @@
 				75E81F761DE215C1001AC532 /* VideoCollectionViewController.m */,
 				75E820521DE2EEBF001AC532 /* WatchedVideosViewController.h */,
 				75E820531DE2EEBF001AC532 /* WatchedVideosViewController.m */,
-				75E8205B1DE30070001AC532 /* WatchedVideoTableViewCell.h */,
-				75E8205C1DE30070001AC532 /* WatchedVideoTableViewCell.m */,
+				7501A74F1DE40FE20018A866 /* PlayVideoViewController.h */,
+				7501A7501DE40FE20018A866 /* PlayVideoViewController.m */,
 			);
 			path = YouHuu;
 			sourceTree = "<group>";
@@ -415,9 +497,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75E81F6C1DE214ED001AC532 /* Build configuration list for PBXNativeTarget "YouHuu" */;
 			buildPhases = (
+				A70DB12C8611829485BDA9A8 /* [CP] Check Pods Manifest.lock */,
 				75E81F381DE214EC001AC532 /* Sources */,
 				75E81F391DE214EC001AC532 /* Frameworks */,
 				75E81F3A1DE214EC001AC532 /* Resources */,
+				7501A7491DE3E31A0018A866 /* ShellScript */,
+				94A1664B92D6896468830281 /* [CP] Embed Pods Frameworks */,
+				66DF673FAC9843974CDFB98E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -432,9 +518,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75E81F6F1DE214ED001AC532 /* Build configuration list for PBXNativeTarget "YouHuuTests" */;
 			buildPhases = (
+				36A94AA2C5683347D6E2DADF /* [CP] Check Pods Manifest.lock */,
 				75E81F541DE214EC001AC532 /* Sources */,
 				75E81F551DE214EC001AC532 /* Frameworks */,
 				75E81F561DE214EC001AC532 /* Resources */,
+				C90A8367AC557A1725253E4E /* [CP] Embed Pods Frameworks */,
+				9D0E0C3445FE32625F16CFF5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -450,9 +539,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75E81F721DE214ED001AC532 /* Build configuration list for PBXNativeTarget "YouHuuUITests" */;
 			buildPhases = (
+				8F518F8B539BF0C887551B34 /* [CP] Check Pods Manifest.lock */,
 				75E81F5F1DE214EC001AC532 /* Sources */,
 				75E81F601DE214EC001AC532 /* Frameworks */,
 				75E81F611DE214EC001AC532 /* Resources */,
+				85ADCB1D1D3B6C18B546B7E3 /* [CP] Embed Pods Frameworks */,
+				5BDDA4196EFBF6F41A691C8B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -551,12 +643,164 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		36A94AA2C5683347D6E2DADF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5BDDA4196EFBF6F41A691C8B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YouHuuUITests/Pods-YouHuuUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66DF673FAC9843974CDFB98E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YouHuu/Pods-YouHuu-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7501A7491DE3E31A0018A866 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 790c8384a2c9c4327000edcfd44d37658258e673 221541803d0db8f5a9646b4628f486519a1c9b646dc41b7806016801df8138b2";
+		};
+		85ADCB1D1D3B6C18B546B7E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YouHuuUITests/Pods-YouHuuUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F518F8B539BF0C887551B34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		94A1664B92D6896468830281 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YouHuu/Pods-YouHuu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D0E0C3445FE32625F16CFF5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YouHuuTests/Pods-YouHuuTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A70DB12C8611829485BDA9A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C90A8367AC557A1725253E4E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YouHuuTests/Pods-YouHuuTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		75E81F381DE214EC001AC532 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				75E81F471DE214EC001AC532 /* ParentViewController.m in Sources */,
+				7501A7511DE40FE20018A866 /* PlayVideoViewController.m in Sources */,
 				75E81FF71DE2D8E6001AC532 /* SDImageCache.m in Sources */,
 				75E81FF91DE2D8E6001AC532 /* NSData+ImageContentType.m in Sources */,
 				75E8204C1DE2E889001AC532 /* XCDYouTubeLogger.m in Sources */,
@@ -570,6 +814,7 @@
 				75E820001DE2D8E6001AC532 /* UIView+WebCacheOperation.m in Sources */,
 				75E820021DE2D8E6001AC532 /* SDWebImageDownloaderOperation.m in Sources */,
 				75E820011DE2D8E6001AC532 /* SDWebImageDownloader.m in Sources */,
+				7501A7561DE411630018A866 /* Constant.m in Sources */,
 				75E81F4D1DE214EC001AC532 /* YouHuu.xcdatamodeld in Sources */,
 				75E81FFD1DE2D8E6001AC532 /* UIImage+WebP.m in Sources */,
 				75E820041DE2D8E6001AC532 /* SDWebImageDecoder.m in Sources */,
@@ -726,32 +971,43 @@
 		};
 		75E81F6D1DE214ED001AC532 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E216EABC4080FFB72B1D2EF8 /* Pods-YouHuu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Ashish Kumar (X7ANCK5CE8)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Vidzy Inc. (464FGHSKL9)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = YouHuu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iOS.YouHuu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "aa232ef4-cdae-4193-bed9-2693fce61f1a";
+				PROVISIONING_PROFILE = "c3a6ad08-0ba5-4702-86a5-77e0fe933f1d";
 			};
 			name = Debug;
 		};
 		75E81F6E1DE214ED001AC532 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71B68B10520CB3A91D6CFD01 /* Pods-YouHuu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = YouHuu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iOS.YouHuu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "aa232ef4-cdae-4193-bed9-2693fce61f1a";
+				PROVISIONING_PROFILE = "c3a6ad08-0ba5-4702-86a5-77e0fe933f1d";
 			};
 			name = Release;
 		};
 		75E81F701DE214ED001AC532 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0777741DC57FC0C4CEC20E34 /* Pods-YouHuuTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = YouHuuTests/Info.plist;
@@ -764,6 +1020,7 @@
 		};
 		75E81F711DE214ED001AC532 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A3B1CDB2EFF1E576FDE8772 /* Pods-YouHuuTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = YouHuuTests/Info.plist;
@@ -776,6 +1033,7 @@
 		};
 		75E81F731DE214ED001AC532 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E010839FED4223591D51BB7 /* Pods-YouHuuUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = YouHuuUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -787,6 +1045,7 @@
 		};
 		75E81F741DE214ED001AC532 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75213BDECD8507D883CC52B9 /* Pods-YouHuuUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = YouHuuUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -815,6 +1074,7 @@
 				75E81F6E1DE214ED001AC532 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		75E81F6F1DE214ED001AC532 /* Build configuration list for PBXNativeTarget "YouHuuTests" */ = {
 			isa = XCConfigurationList;
@@ -823,6 +1083,7 @@
 				75E81F711DE214ED001AC532 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		75E81F721DE214ED001AC532 /* Build configuration list for PBXNativeTarget "YouHuuUITests" */ = {
 			isa = XCConfigurationList;
@@ -831,6 +1092,7 @@
 				75E81F741DE214ED001AC532 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -16,7 +16,7 @@
 @implementation ParentViewController
 
 -(void)viewDidAppear:(BOOL)animated{
-    NSNumber *value = [NSNumber numberWithInt:UIInterfaceOrientationLandscapeLeft];
+    NSNumber *value = [NSNumber numberWithInt:UIInterfaceOrientationLandscapeRight];
     [[UIDevice currentDevice] setValue:value forKey:@"orientation"];
 }
 
@@ -39,51 +39,58 @@
     
     self.activityIndicator.hidden = NO;
     
-    NSString *urlString = @"http://54.179.149.254/api/v1/content/listing/41/?format=json";
-    NSURL *url = [NSURL URLWithString:urlString];
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    [NSURLConnection sendAsynchronousRequest:request
-                                       queue:[NSOperationQueue mainQueue]
-                           completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
-                               
-                               self.activityIndicator.hidden = YES;
-                               
-                               if (!error) {
-                                   NSError* parseError;
-                                   id parse = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&parseError];
-                                                                      NSLog(@"data: %@", parse);
-                                   
-                                   NSData *data1 = [NSKeyedArchiver archivedDataWithRootObject:parse];
-                                   [self.storeUserInfo setObject:data1 forKey:@"myJSONParsed"];
-                                   [self.storeUserInfo synchronize];
-                                   
-                                   [self performSegueWithIdentifier:@"videoCollection" sender:self];
-                                   
-                                   
-                                   [self.storeUserInfo setInteger:1 forKey:@"VideosNumber"];
-                                   
-                               }
-                               else{
-                                   
-                                   NSString *alertTitle = @"Error";
-                                   NSString *alertMessage = @"Something went wrong please try again";
-                                   
-                                   UIAlertController *alertController = [UIAlertController
-                                                                         alertControllerWithTitle:alertTitle
-                                                                         message:alertMessage
-                                                                         preferredStyle:UIAlertControllerStyleAlert];
-                                   
-                                   UIAlertAction *okAction = [UIAlertAction
-                                                              actionWithTitle:NSLocalizedString(@"OK", @"OK action")
-                                                              style:UIAlertActionStyleDefault
-                                                              handler:^(UIAlertAction *action)
-                                                              {
-                                                                  [self fetchTrainData];
-                                                              }];
-                                   
-                                   [alertController addAction:okAction];
-                               }
-                           }];
+    [self performSegueWithIdentifier:@"videoCollection" sender:self];
+    
+    
+    [self.storeUserInfo setInteger:1 forKey:@"VideosNumber"];
+    
+//    NSString *urlString = @"http://54.179.149.254/api/v1/content/listing/41/?format=json";
+//    NSURL *url = [NSURL URLWithString:urlString];
+//    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+//    [NSURLConnection sendAsynchronousRequest:request
+//                                       queue:[NSOperationQueue mainQueue]
+//                           completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
+//                               
+//                               self.activityIndicator.hidden = YES;
+//                               
+//                               if (!error) {
+//                                   NSError* parseError;
+//                                   id parse = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&parseError];
+//                                                                      NSLog(@"data: %@", parse);
+//                                   
+//                                   NSData *data1 = [NSKeyedArchiver archivedDataWithRootObject:parse];
+//                                   [self.storeUserInfo setObject:data1 forKey:@"myJSONParsed"];
+//                                   [self.storeUserInfo synchronize];
+//                                   
+//                                   [self performSegueWithIdentifier:@"videoCollection" sender:self];
+//                                   
+//                                   
+//                                   [self.storeUserInfo setInteger:1 forKey:@"VideosNumber"];
+//                                   
+//                               }
+//                               else{
+//                                   
+//                                   NSString *alertTitle = @"Error";
+//                                   NSString *alertMessage = @"Something went wrong please try again";
+//                                   
+//                                   
+//                                   UIAlertController *actionSheet = [UIAlertController alertControllerWithTitle:alertTitle message:alertMessage preferredStyle:UIAlertControllerStyleAlert];
+//                                   
+//                                   [actionSheet addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+//                                       
+//                                       // Cancel button tappped.
+//                                       [self dismissViewControllerAnimated:YES completion:^{
+//                                           
+//                                           [self fetchTrainData];
+//                                           
+//                                       }];
+//                                   }]];
+//                                   
+//                                   // Present action sheet.
+//                                   [self presentViewController:actionSheet animated:YES completion:nil];
+//                                   
+//                               }
+//                           }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -107,7 +114,7 @@
     return NO;
 }
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations {
-    return UIInterfaceOrientationMaskLandscapeLeft;
+    return UIInterfaceOrientationMaskLandscapeRight;
 }
 
 @end

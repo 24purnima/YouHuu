@@ -16,6 +16,7 @@
     CGFloat topHeight;
 }
 
+@property (nonatomic, strong) NSString *youtubeIdentifier;
 @property (assign) NSInteger numberOfThumbValue;
 @property (nonatomic, strong) NSMutableArray *videoMutableArray;
 @property (nonatomic, strong) NSUserDefaults *storeUserInfo;

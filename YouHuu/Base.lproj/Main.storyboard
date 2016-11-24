@@ -206,11 +206,65 @@
                         <outlet property="videoThumb3" destination="SUV-fd-s9l" id="hVY-79-Ojs"/>
                         <outlet property="videoThumb4" destination="EDB-k0-Wj5" id="4vy-TI-KBV"/>
                         <outlet property="videoThumb5" destination="HY8-GL-UyD" id="wpz-Un-V7C"/>
+                        <segue destination="Qht-4d-9Xa" kind="modal" identifier="playVideo" id="Kec-jC-dii"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="687" y="368"/>
+        </scene>
+        <!--Play Video View Controller-->
+        <scene sceneID="jXY-qr-DCj">
+            <objects>
+                <viewController storyboardIdentifier="PlayVideoViewController" id="Qht-4d-9Xa" customClass="PlayVideoViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eyD-P5-LYL">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="tCy-0U-Uqc">
+                                <rect key="frame" x="0.0" y="192" width="568" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="UmE-s9-McW">
+                                        <rect key="frame" x="157" y="11" width="129" height="105"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="m5W-mJ-ih8">
+                                        <rect key="frame" x="294" y="11" width="129" height="105"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Axo-ZC-I0w">
+                                        <rect key="frame" x="431" y="11" width="129" height="105"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="i7N-4j-Y3y">
+                                        <rect key="frame" x="15" y="11" width="129" height="105"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="Esz-SA-6Ud" customClass="YTPlayerView">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="thumbImage1" destination="i7N-4j-Y3y" id="Nyz-ya-cj6"/>
+                        <outlet property="thumbImage2" destination="UmE-s9-McW" id="p7j-HT-Q3f"/>
+                        <outlet property="thumbImage3" destination="m5W-mJ-ih8" id="hW3-vP-OdF"/>
+                        <outlet property="thumbImage4" destination="Axo-ZC-I0w" id="hXS-fw-kas"/>
+                        <outlet property="thumbnailBackView" destination="tCy-0U-Uqc" id="qes-mz-AmD"/>
+                        <outlet property="ytPlayerView" destination="Esz-SA-6Ud" id="KcN-9W-fZn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hq9-Gz-WOM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1330" y="368"/>
         </scene>
         <!--Watched Videos View Controller-->
         <scene sceneID="QdZ-oE-rUi">

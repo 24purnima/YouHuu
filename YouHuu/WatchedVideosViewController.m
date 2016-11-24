@@ -6,12 +6,12 @@
 //  Copyright © 2016 WhizKidz. All rights reserved.
 //
 
-#define youtubeImageUrl "http://img.youtube.com/vi/VIDEO_ID/0.jpg"
 
 
 #import "WatchedVideosViewController.h"
 #import "WatchedVideoTableViewCell.h"
 #import "UIImageView+WebCache.h"
+#import "Constant.h"
 
 @interface WatchedVideosViewController ()
 
@@ -87,8 +87,8 @@ static NSString * const tableViewCellIdentifier = @"watchedVideos";
     
     NSDictionary *dict = [self.watchedVideoArray objectAtIndex:indexPath.row];
     NSString *videoUrl = [dict objectForKey:@"url"];
-    NSString *videoIdentifier = [self extractYoutubeIdFromLink:videoUrl];
-    NSString *imageStr = @youtubeImageUrl;
+    NSString *videoIdentifier = [Constant extractYoutubeIdFromLink:videoUrl];
+    NSString *imageStr = YouTubeImageUrl;
     imageStr = [imageStr stringByReplacingOccurrencesOfString:@"VIDEO_ID" withString:videoIdentifier];
     NSURL *imgUrl = [NSURL URLWithString:imageStr];
     
@@ -106,21 +106,6 @@ static NSString * const tableViewCellIdentifier = @"watchedVideos";
     return 80.0;
 }
 
-
-- (NSString *)extractYoutubeIdFromLink:(NSString *)link {
-    
-    NSString *regexString = @"((?<=(v|V)/)|(?<=be/)|(?<=(\\?|\\&)v=)|(?<=embed/))([\\w-]++)";
-    NSRegularExpression *regExp = [NSRegularExpression regularExpressionWithPattern:regexString
-                                                                            options:NSRegularExpressionCaseInsensitive
-                                                                              error:nil];
-    
-    NSArray *array = [regExp matchesInString:link options:0 range:NSMakeRange(0,link.length)];
-    if (array.count > 0) {
-        NSTextCheckingResult *result = array.firstObject;
-        return [link substringWithRange:result.range];
-    }
-    return nil;
-}
 
 
 /*
